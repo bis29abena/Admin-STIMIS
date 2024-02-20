@@ -1,6 +1,6 @@
 import React from "react";
-import {NotificationsNone, ManageAccounts } from '@mui/icons-material';
-import "./topbar.css"
+import { NotificationsNone, ManageAccounts } from "@mui/icons-material";
+import "./topbar.css";
 
 export default function Topbar() {
   return (
@@ -11,13 +11,17 @@ export default function Topbar() {
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-            <NotificationsNone/>
+            <NotificationsNone />
             <span className="topIconBadge">2</span>
           </div>
           <div className="topbarIconContainer">
-            <ManageAccounts/>
+            <ManageAccounts />
           </div>
-          <img src="https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="topAvatar" />
+          <img
+            src="https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="topAvatar"
+          />
         </div>
       </div>
     </div>

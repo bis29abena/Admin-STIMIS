@@ -4,7 +4,7 @@ import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 export default function FeaturedInfo() {
   return (
     <div className="featured">
-      <div className="featuredItem">
+      <div className="featuredItem item1">
         <span className="featuredTitle">Actors Capability to Innovate</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$2,415</span>
@@ -15,7 +15,7 @@ export default function FeaturedInfo() {
         <span className="featuredSub">Intelectual Property - 2022 22</span>
         <span className="featuredSub">Number of Parents 10</span>
       </div>
-      <div className="featuredItem">
+      <div className="featuredItem item2">
         <span className="featuredTitle">Actors Interaction</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$2,415</span>
@@ -25,7 +25,7 @@ export default function FeaturedInfo() {
         </div>
         <span className="featuredSub">industrial Design</span>
       </div>
-      <div className="featuredItem">
+      <div className="featuredItem item3">
         <span className="featuredTitle">Human Capital</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$2,415</span>
@@ -37,7 +37,7 @@ export default function FeaturedInfo() {
         <span className="featuredSub">STEM Graduates - 2018/2019 405,985</span>
         <span className="featuredSub">Number of PHD Researchs 120</span>
       </div>
-      <div className="featuredItem">
+      <div className="featuredItem item4">
         <span className="featuredTitle">Economy</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$2,415</span>

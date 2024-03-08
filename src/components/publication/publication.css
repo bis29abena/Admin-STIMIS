@@ -1,0 +1,34 @@
+.publication{
+    margin: 10px;
+    padding: 5px 20px;
+    background-color: rgb(228, 236, 243);
+    border-radius: 5px;
+    box-shadow: 10px 4px 10px -2px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: 10px 4px 10px -2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 10px 4px 10px -2px rgba(0, 0, 0, 0.33);
+}
+
+.publicationWrapper{
+    margin: 10px;
+    text-align: left;
+}
+
+.pub{
+    line-height: 1.5;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.publicationData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.labelData{
+    margin-left: 10px;
+}

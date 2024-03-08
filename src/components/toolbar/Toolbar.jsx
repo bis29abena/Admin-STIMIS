@@ -6,15 +6,13 @@ import SwitchMenu from "../switchmenu/SwitchMenu";
 import ChartType from "../chartType/ChartType";
 import DownloadIcon from "@mui/icons-material/Download";
 import ToolTip from "../tootlip/ToolTip";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 export default function Toolbar({ type, setType, setChartType }) {
-  const [dates, setdate] = useState([]);
-
-  useEffect(() => {
-    const dates = generateDates();
-
-    setdate(dates);
-  }, []);
+  const [startDate, starteSetDate] = useState(null);
+  const [endDate, EndSetDate] = useState(null)
 
   var data = ["Line", "Bar", "Pie Chart", "Histogram", "Area"];
   return (
@@ -22,11 +20,22 @@ export default function Toolbar({ type, setType, setChartType }) {
       <div className="toolbarWrapper">
         <div className="toolbarLeft">
           <div className="dropdowns">
-            <span className="date">Start / End Period:</span>
-            <DropDownMenu title="Start Date" items={dates} key="m1" />
+            <LocalizationProvider dateAdapter={AdapterDayjs} >
+              <DatePicker
+                value={startDate}
+                onChange={(newValue) => starteSetDate(newValue)}
+                label = "Start Date"
+              />
+            </LocalizationProvider>
           </div>
           <div className="dropdowns">
-            <DropDownMenu title="End Date" items={dates} key="m2" />
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DatePicker
+                value={endDate}
+                onChange={(newValue) => EndSetDate(newValue)}
+                label = "End Date"
+              />
+            </LocalizationProvider>
           </div>
           <div className="dropdowns">
             <ChartType

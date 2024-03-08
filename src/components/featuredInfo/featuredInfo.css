@@ -10,43 +10,77 @@
   padding: 30px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  color: black;
+  opacity: 0.8;
+  box-shadow: 10px 4px 10px -2px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 10px 4px 10px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 10px 4px 10px -2px rgba(0, 0, 0, 0.33);
 }
 
-.featuredTitle{
-    font-size: 20px;
+.item1 {
+  background-color: rgb(210, 224, 224);
+  transition: background-color 2s;
 }
 
-.featuredMoneyContainer{
-    margin: 10px 0px;
-    display: flex;
-    align-items: center;
+.item1:hover {
+  background-color: white;
 }
 
-.featuredMoney{
-    font-style: 30;
-    font-weight: bold;
+.item2 {
+  background-color: rgb(231, 236, 181);
+  transition: background-color 2s;
+}
+.item2:hover {
+  background-color: white;
+}
+.item3 {
+  background-color: rgb(174, 185, 231);
+  transition: background-color 2s;
 }
 
-.featuredMoneyrate{
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
+.item3:hover {
+  background-color: white;
 }
 
-.featuredIcon{
-    font-size: 14px;
-    margin-left: 5px;
-    color: green;
+.item4 {
+  background-color: rgb(225, 175, 238);
+  transition: background-color 2s;
+}
+.item4:hover {
+  background-color: white;
+}
+.featuredTitle {
+  font-size: 20px;
 }
 
-.featuredIcon.negative{
-    color: red;
+.featuredMoneyContainer {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
 }
 
-.featuredSub{
-    font-size: 15px;
-    color: grey;
+.featuredMoney {
+  font-style: 30;
+  font-weight: bold;
+}
+
+.featuredMoneyrate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.featuredIcon {
+  font-size: 14px;
+  margin-left: 5px;
+  color: green;
+}
+
+.featuredIcon.negative {
+  color: red;
+}
+
+.featuredSub {
+  font-size: 15px;
+  color: grey;
 }
